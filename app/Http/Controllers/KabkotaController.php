@@ -12,4 +12,15 @@ class KabkotaController extends Controller
         $kabkotas = Kabkota::all();
         return view('kabkotas', compact('kabkotas'));
     }
+
+    public function data()
+    {
+        $kabkotas = Kabkota::all();
+        return view('data_kabkota', compact('kabkotas'));
+    }
+    public function tematik()
+    {
+        $kabkotas = Kabkota::all();
+        return view('tematik_kabkota', compact('kabkotas'));
+    }
 }

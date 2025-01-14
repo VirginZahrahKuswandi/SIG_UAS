@@ -4,6 +4,8 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
+use function PHPSTORM_META\type;
+
 return new class extends Migration
 {
     /**
@@ -26,6 +28,8 @@ return new class extends Migration
             $table->integer('jumlah_sma');
             $table->integer('jumlah_smk');
             $table->integer('jumlah_perguruan_tinggi');
+            $table->string('type');
+            $table->longText('polygon');
             $table->timestamps();
         });
     }

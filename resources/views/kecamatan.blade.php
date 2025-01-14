@@ -35,10 +35,10 @@
             maxZoom: 19,
             attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
         }).addTo(map);
-        var kabkotas = @json($kabkotas);
+        var kecamatans = @json($kecamatans);
 
-        kabkotas.forEach(kota => {
-            L.marker([kota.latitude, kota.longitude]).addTo(map).bindPopup(kota.name);
+        kecamatans.forEach(kecamatan => {
+            L.marker([kecamatan.latitude, kecamatan.longitude]).addTo(map).bindPopup(kecamatan.name);
         })
     </script>
 </body>
